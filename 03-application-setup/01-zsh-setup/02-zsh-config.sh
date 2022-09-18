@@ -9,8 +9,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 sudo sed -i 's\ZSH_THEME="robbyrussell"\ZSH_THEME="powerlevel10k/powerlevel10k"\g' ~/.zshrc
 
 
-# Rebooting zsh
-exec zsh
+
 ## Installing plugins
 # Zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
@@ -21,3 +20,6 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 # restoring dotifles
 . ../../01-config/05-dotfiles.sh
+
+# Rebooting zsh
+exec zsh
